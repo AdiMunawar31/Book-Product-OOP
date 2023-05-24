@@ -1,7 +1,5 @@
 package configs;
 
-import java.io.FileNotFoundException;
-
 import controllers.BookController;
 import controllers.PriceController;
 import models.Author;
@@ -29,10 +27,8 @@ public class ApplicationConfiguration {
    * Fuction ini dibuat pada configs agar main func tidak terlalu banyak code
    * Mungkin ini bukan cara yang baik namun saya belum mengetahui best practicenya
    * 
-   * 
-   * @throws FileNotFoundException
    */
-  public void runApplication() throws FileNotFoundException {
+  public void runApplication() {
 
     // Object Author
     Author haidarMusyafa = new Author("Haidar", "Musyafa", "Indonesia", 30);
