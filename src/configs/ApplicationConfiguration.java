@@ -39,24 +39,18 @@ public class ApplicationConfiguration {
     Author adiSutanto = new Author("Adi", "Sutanto", "Indonesia", 27);
 
     // Object Novelis
-    Novelis jkRowling = new Novelis("J.K.", "Rowling", "England", 57,
-        true, "Best Seller");
-    Novelis tereLiye = new Novelis("Tere", "Liye", "Indonesia", 35,
-        true, "Best Seller");
-    Novelis deeLestari = new Novelis("Dee", "Lestari", "Indonesia", 30,
-        true, "Good");
+    Novelis jkRowling = new Novelis("J.K.", "Rowling", "England", 57, true, "Best Seller");
+    Novelis tereLiye = new Novelis("Tere", "Liye", "Indonesia", 35, true, "Best Seller");
+    Novelis deeLestari = new Novelis("Dee", "Lestari", "Indonesia", 30, true, "Good");
     Novelis faisalSyahreza = new Novelis("Faisal", "Syahreza", "Indonesia", 40, true, "New Commer");
     Novelis juliaGolding = new Novelis("Julia", "Golding", "England", 41, false, "Best Seller");
 
     // Object Mangaka
     Mangaka masashiKishimoto = new Mangaka("Masashi", "Kishimoto", "Japan", 48, "Best Seller");
     Mangaka yoshihiroTogashi = new Mangaka("Yoshihiro", "Togashi", "Japan", 56, "Good");
-    Mangaka eiichiroOda = new Mangaka("Eiichiro", "Oda", "Japan", 57,
-        "Best Seller");
-    Mangaka rizkiAnwar = new Mangaka("Rizki", "Anwar", "Indonesia", 25,
-        "New Commer");
-    Mangaka yusufFadli = new Mangaka("Yusuf", "Fadli", "Indonesia", 32,
-        "New Commer");
+    Mangaka eiichiroOda = new Mangaka("Eiichiro", "Oda", "Japan", 57, "Best Seller");
+    Mangaka rizkiAnwar = new Mangaka("Rizki", "Anwar", "Indonesia", 25, "New Commer");
+    Mangaka yusufFadli = new Mangaka("Yusuf", "Fadli", "Indonesia", 32, "New Commer");
 
     Publisher bloomsbury = new Publisher("Bloomsbury", "United Kingdom", 30.0);
     Publisher gramedia = new Publisher("Gramedia", "Indonesia", 50.0);
@@ -70,8 +64,8 @@ public class ApplicationConfiguration {
 
     // Object Book
     Book book1 = new Book("Book - 001", "Memahami Hamka", haidarMusyafa, mizan);
-    Book book2 = new Book("Book - 002", "Head First Java: Your Brain on Java - A Learner's Guide",
-        bertBates, oReillyMedia);
+    Book book2 = new Book("Book - 002", "Head First Java: Your Brain on Java - A Learner's Guide", bertBates,
+        oReillyMedia);
     Book book3 = new Book("Book - 003", "Java For Dummies", barryBurd, oReillyMedia);
     Book book4 = new Book("Book - 004", "Flutter For Dummies", barryBurd, oReillyMedia);
     Book book5 = new Book("Book - 005", "The Subtle Art of Not Giving", markManson, harperOne);
@@ -80,14 +74,11 @@ public class ApplicationConfiguration {
     Book book8 = new Book("Book - 008", "Teknologi Baru", adiSutanto, elexMediaKomputindo);
 
     // Object Novel
-    Novel novel1 = new Novel("Novel - 001", "Harry Potter and the Philosopher's Stone", jkRowling,
-        bloomsbury,
+    Novel novel1 = new Novel("Novel - 001", "Harry Potter and the Philosopher's Stone", jkRowling, bloomsbury,
         "Fantasy");
-    Novel novel2 = new Novel("Novel - 002", "Harry Potter and the Chamber of Secrets", jkRowling,
-        bloomsbury,
+    Novel novel2 = new Novel("Novel - 002", "Harry Potter and the Chamber of Secrets", jkRowling, bloomsbury,
         "Fantasy");
-    Novel novel3 = new Novel("Novel - 003", "Harry Potter and the Prisoner of Azkaban", jkRowling,
-        bloomsbury,
+    Novel novel3 = new Novel("Novel - 003", "Harry Potter and the Prisoner of Azkaban", jkRowling, bloomsbury,
         "Fantasy");
     Novel novel4 = new Novel("Novel - 004", "Ayah Aku Berbeda", tereLiye, gramedia, "Drama");
     Novel novel5 = new Novel("Novel - 005", "Madre", deeLestari, gramedia, "Drama");
@@ -98,19 +89,13 @@ public class ApplicationConfiguration {
     // Object Comic
     Comic comic1 = new Comic("Comic - 001", "Uzumaki Naruto", masashiKishimoto, shueisha, true);
     Comic comic2 = new Comic("Comic - 002", "The Worst Client", masashiKishimoto, shueisha, true);
-    Comic comic3 = new Comic("Comic - 003", "For the Sake of Dreams...!!", masashiKishimoto, shueisha,
-        true);
-    Comic comic4 = new Comic("Comic - 004", "Hunter X Hunter : The Day of Departure", yoshihiroTogashi,
-        shueisha,
-        true);
-    Comic comic5 = new Comic("Comic - 005", "Hunter X Hunter : A Struggle in the Mist", yoshihiroTogashi,
-        shueisha,
+    Comic comic3 = new Comic("Comic - 003", "For the Sake of Dreams...!!", masashiKishimoto, shueisha, true);
+    Comic comic4 = new Comic("Comic - 004", "Hunter X Hunter : The Day of Departure", yoshihiroTogashi, shueisha, true);
+    Comic comic5 = new Comic("Comic - 005", "Hunter X Hunter : A Struggle in the Mist", yoshihiroTogashi, shueisha,
         true);
     Comic comic6 = new Comic("Comic - 006", "One Piece", eiichiroOda, gramedia, true);
-    Comic comic7 = new Comic("Comic - 007", "Petualangan di Indonesia", rizkiAnwar, gramediaPustakaUtama,
-        false);
-    Comic comic8 = new Comic("Comic - 008", "Petualangan di Jakarta", yusufFadli, elexMediaKomputindo,
-        false);
+    Comic comic7 = new Comic("Comic - 007", "Petualangan di Indonesia", rizkiAnwar, gramediaPustakaUtama, false);
+    Comic comic8 = new Comic("Comic - 008", "Petualangan di Jakarta", yusufFadli, elexMediaKomputindo, false);
 
     // Menghitung harga buku dengan strategy default
     priceController.calculateBookPrice(book1);
